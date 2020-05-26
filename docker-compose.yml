@@ -1,0 +1,14 @@
+---
+# Used for local development
+version: '3.7'
+
+services:
+
+  app:
+    build:
+      context: .
+    networks:
+      - front
+
+networks:
+  front:
